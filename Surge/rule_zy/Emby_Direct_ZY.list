@@ -1,4 +1,4 @@
-# NAME: Emby_Direct
+# NAME: Emby_Direct_zy
 # AUTHOR: lanmaohh
 # UPDATED: 2023-06-16
 # 仅个人使用，如有影响到各大公益服的权益，请及时联系本人删除。
@@ -38,6 +38,9 @@ DOMAIN-SUFFIX,ws1.amazing910.top
 
 # > 放映厅
 DOMAIN-SUFFIX,emby.9191001.xyz
+
+# > StarCat优
+DOMAIN-SUFFIX,sdhh.catlinks.co.uk
 
 # > CaptainZ_cf
 DOMAIN-SUFFIX,cfemby.wiri.tk
