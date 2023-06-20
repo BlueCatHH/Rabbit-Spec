@@ -16,6 +16,9 @@ DOMAIN-SUFFIX,c.emby.pro
 DOMAIN-SUFFIX,emby.dicarerhome.com
 DOMAIN-SUFFIX,emby-play.dicarerhome.com
 
+# > CC
+DOMAIN-SUFFIX,cc.ccemby.tk
+
 # > 剧狗
 DOMAIN-SUFFIX,ju.dog
 
