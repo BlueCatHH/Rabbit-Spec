@@ -61,6 +61,12 @@ DOMAIN-SUFFIX,cf.embytv.cf
 
 # > 垃圾1111
 DOMAIN-SUFFIX,cf.emby.ml
+DOMAIN-SUFFIX,cfca.emby.ml
+DOMAIN-SUFFIX,cfde.xmsl.org
+DOMAIN-SUFFIX,1.loseremby.org
+DOMAIN-SUFFIX,4837.emby.ml
+DOMAIN-SUFFIX,kr.xmsl.org
+DOMAIN-SUFFIX,shs.xmsl.org
 
 # > misakaf
 DOMAIN-SUFFIX,emby.misakaf.org
