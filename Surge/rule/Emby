@@ -1,6 +1,0 @@
-# Emby分流汇总
-
-# > 桃子私服
-HOST-SUFFIX,cn.embymv.me, Direct
-HOST-SUFFIX,music.embymv.me, Direct
-HOST-SUFFIX,embymv.me, PROXY
