@@ -21,9 +21,6 @@ DOMAIN-SUFFIX,9wfree.emby.eu.org
 DOMAIN-SUFFIX,cf.freetz.top
 
 # > 私人影院
-DOMAIN-SUFFIX,embyplus.org
-
-# > 私人影院
 DOMAIN-SUFFIX,emby2.agon.cf
 
 # > 会员制餐厅
@@ -46,10 +43,6 @@ DOMAIN-SUFFIX,cdn.misakaf.org
 
 # > hxd
 DOMAIN-SUFFIX,usa.bili.rip
-
-# > 垃圾1111
-DOMAIN-SUFFIX,de.emby.ml
-DOMAIN-SUFFIX,de.xmsl.org
 
 # > 蓝海
 DOMAIN-SUFFIX,zdb.xiaoyi.one
