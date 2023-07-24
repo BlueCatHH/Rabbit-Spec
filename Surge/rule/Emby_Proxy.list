@@ -14,7 +14,6 @@ DOMAIN-SUFFIX,c.emby.pro
 
 # > GuGu
 DOMAIN-SUFFIX,emby.dicarerhome.com
-DOMAIN-SUFFIX,emby-play.dicarerhome.com
 DOMAIN-SUFFIX,front.gugumedia.link
 
 # > CC
@@ -33,7 +32,9 @@ DOMAIN-SUFFIX,emby.agon.cf
 DOMAIN-SUFFIX,flare.starcat.eu.org
 
 # > Magic Cloud魔法
+DOMAIN-SUFFIX,emby.freetz.top
 DOMAIN-SUFFIX,cf.freetz.top
+DOMAIN-SUFFIX,kr.freetz.top
 
 # > hxd
 DOMAIN-SUFFIX,bili.bili.rip
@@ -48,52 +49,20 @@ DOMAIN-SUFFIX,emby.wiri.tk
 # > 星云
 DOMAIN-SUFFIX,direct.nebula-emby.com
 
-# > 终点站
-DOMAIN-SUFFIX,emby.wtf
-
 # > Nya Media
 DOMAIN-SUFFIX,bangumi.ca
-
-# > AcEmby
-DOMAIN-SUFFIX,cflix.acemby.org
-
-# > Orange
-DOMAIN-SUFFIX,cf.embytv.cf
-
-# > 垃圾1111
-DOMAIN-SUFFIX,cf.emby.ml
-DOMAIN-SUFFIX,cfca.emby.ml
-DOMAIN-SUFFIX,cfde.xmsl.org
-DOMAIN-SUFFIX,1.loseremby.org
-DOMAIN-SUFFIX,4837.emby.ml
-DOMAIN-SUFFIX,kr.xmsl.org
-DOMAIN-SUFFIX,shs.xmsl.org
 
 # > misakaf
 DOMAIN-SUFFIX,emby.misakaf.org
 
-# > Singularity
-DOMAIN-SUFFIX,singularity.deja-vu.beauty
-
 # > CaptainZ
 DOMAIN-SUFFIX,cfemby.wiri.tk
-
-# > 江湖
-DOMAIN-SUFFIX,av.happyav.eu.org
 
 # > 星光
 DOMAIN-SUFFIX,free.emby.eu.org
 
-# > 猫熊影业 embyclub
-DOMAIN-SUFFIX,emby.kim
-
 # > NMEmby
-DOMAIN-SUFFIX,film.goodisp.org
-DOMAIN-SUFFIX,x.ggtt.cf
-DOMAIN-SUFFIX,burin.wddzzz.eu.org
-
-# > TeCar
-DOMAIN-SUFFIX,emby.carlos.trade
+DOMAIN-SUFFIX,film.ohhhh.org
 
 # > PiliPili
 DOMAIN-SUFFIX,pilipili-cf.emby77.org
@@ -101,13 +70,6 @@ DOMAIN-SUFFIX,pilipili.emby77.org
 
 # > JMS
 DOMAIN-SUFFIX,cf.jmsooo.com
-DOMAIN-SUFFIX,emby.wtf
-DOMAIN-SUFFIX,pub1back.emby.wtf
-DOMAIN-SUFFIX,pub2back.emby.wtf
-DOMAIN-SUFFIX,pub3back.emby.wtf
-DOMAIN-SUFFIX,pub1.emby.wtf
-DOMAIN-SUFFIX,pub2.emby.wtf
-DOMAIN-SUFFIX,pub3.emby.wtf
 
 # > Odyssey
 DOMAIN-SUFFIX,cf.odysseyplus.site
@@ -115,32 +77,6 @@ DOMAIN-SUFFIX,us.odysseyplus.site
 DOMAIN-SUFFIX,kr.odysseyplus.site
 DOMAIN-SUFFIX,jp.odysseyplus.site
 DOMAIN-SUFFIX,jp2.odysseyplus.site
-
-# > Studyfun
-DOMAIN-SUFFIX,cf.studyfun.live
-DOMAIN-SUFFIX,cdn.studyfun.live
-DOMAIN-SUFFIX,cdn1.studyfun.live
-DOMAIN-SUFFIX,stream.studyfun.live
-DOMAIN-SUFFIX,stream1.studyfun.live
-
-# > US
-DOMAIN-SUFFIX,cf.gtlx.org
-DOMAIN-SUFFIX,pornemby.club
-DOMAIN-SUFFIX,goodisp.org
-DOMAIN-SUFFIX,embyplus.org
-DOMAIN-SUFFIX,media.nijigem.by
-DOMAIN-SUFFIX,789.123456.al
-
-# > HK
-DOMAIN-SUFFIX,nijigem.by
-
-# > DE
-DOMAIN-SUFFIX,mgl.gay
-DOMAIN-SUFFIX,speedx.one
-DOMAIN-SUFFIX,play.acemby.org
-
-# > nexitally
-DOMAIN-SUFFIX,emby.nexitally.com
 
 # > 蓝海
 DOMAIN-SUFFIX,emby.xiaoyi.one
