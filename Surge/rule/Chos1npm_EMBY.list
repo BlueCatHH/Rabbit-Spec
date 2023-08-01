@@ -1,28 +1,25 @@
 # > 不给看
-DOMAIN-SUFFIX,c.emby.pro
 
 DOMAIN-SUFFIX,zwei.bgka.me
+DOMAIN-SUFFIX,c.emby.pro
+
 
 # > 桃子
 
 DOMAIN-SUFFIX,embymv.me
-
 DOMAIN-SUFFIX,cn.embymv.me
+
 
 # > Ody
 
 # Cloudflare
 DOMAIN-SUFFIX,cf.odysseyplus.site
-
 # 美西
 DOMAIN-SUFFIX,us.odysseyplus.site
-
 # 韩国
 DOMAIN-SUFFIX,kr.odysseyplus.site
-
 # 日本
 DOMAIN-SUFFIX,jp.odysseyplus.site
-
 # 日本2
 DOMAIN-SUFFIX,jp2.odysseyplus.site
 
