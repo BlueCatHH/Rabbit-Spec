@@ -1,7 +1,6 @@
 payload:
 
 # > 桃子私服
- - DOMAIN-SUFFIX,cn.embymv.me
  - DOMAIN-SUFFIX,music.embymv.me
 
 # > 不给看
