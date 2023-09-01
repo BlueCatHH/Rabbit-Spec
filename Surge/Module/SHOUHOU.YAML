@@ -1,0 +1,203 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+proxies:
+    - { name: '🇭🇰 HK 01 CM 0.01x', type: ss, server: gd.leiyingchuanmei.com, port: 51545, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇭🇰 HK 01 CM 0.01x [备用]', type: ss, server: jsyd.as9929.uk, port: 38023, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇭🇰 HK WEIYI 1x', type: ss, server: wgwyhk.as9929.uk, port: 46518, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇭🇰 HK 02 EIP 1x', type: trojan, server: eiphk.as9929.uk, port: 32135, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇭🇰 HK 03 IPLC-EIP 1x', type: ss, server: gyiplc.as9929.uk, port: 58396, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇸🇬 SG CN2GIA 0.01x', type: trojan, server: hwysg.as9929.uk, port: 36875, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇸🇬 SG 02 IPLC-EIP', type: ss, server: gyiplc.as9929.uk, port: 16099, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇯🇵 JP BGP 0.01x', type: ss, server: jsyd.as9929.uk, port: 21452, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇯🇵 JP 01 IPLC 1x', type: ss, server: gyiplc01.as9929.uk, port: 23204, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇺🇸 US 01 0.01x', type: ss, server: jsyd.as9929.uk, port: 51007, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇺🇸 US 01 IPLC 1x', type: ss, server: hu.leiyingchuanmei.com, port: 31553, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+    - { name: '🇨🇳 TW 01 CM 0.01x', type: ss, server: 1d92.foamddns.online, port: 41483, cipher: chacha20-ietf-poly1305, password: 3b6d9c82-510b-41d4-89a8-a6175a8d3ed4, udp: true }
+proxy-groups:
+    - { name: 守候网络, type: select, proxies: [自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 自动选择, type: url-test, proxies: [ '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: [ '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: 🤖OpenAI, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 🎬桃子, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 🎬EMBY, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 🚀SpeedTest, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 🎬国外媒体, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 🍎苹果服务, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 🎬Youtube, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 🎬Netflix, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: ✈️Telegram, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 🎬哔哩哔哩, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: 🎮游戏平台, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+    - { name: ⚓️其他流量, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK 01 CM 0.01x', '🇭🇰 HK 01 CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK 02 EIP 1x', '🇭🇰 HK 03 IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇸🇬 SG 02 IPLC-EIP', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP 01 IPLC 1x', '🇺🇸 US 01 0.01x', '🇺🇸 US 01 IPLC 1x', '🇨🇳 TW 01 CM 0.01x'] }
+rule-providers:
+  Direct:
+    type: http
+    behavior: domain
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Direct/Direct.yaml
+    path: ./ruleset/Direct.yaml
+  Emby_Direct:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/rule/Emby_Direct.yaml
+    path: ./ruleset/Emby_Direct.yaml
+  Emby_Proxy:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/rule/Emby_Proxy.yaml
+    path: ./ruleset/Emby_Proxy.yaml
+  Speedtest:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml
+    path: ./ruleset/Speedtest.yaml
+  Lan:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.yaml
+    path: ./ruleset/Lan.yaml
+  Download:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download.yaml
+    path: ./ruleset/Download.yaml
+  Ad:
+    type: http
+    behavior: domain
+    interval: 86400
+    url: https://anti-ad.net/clash.yaml
+    path: ./ruleset/anti-ad-clash.yaml
+  GlobalMedia:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+    path: ./ruleset/GlobalMedia.yaml
+  Apple:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical.yaml
+    path: ./ruleset/Apple.yaml
+  Github:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml
+    path: ./ruleset/Github.yaml
+  YOUTUBE:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    path: ./ruleset/YouTube.yaml
+  NETFLIX:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    path: ./ruleset/Netflix.yaml
+  Google:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml
+    path: ./ruleset/Google.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram.yaml
+    path: ./ruleset/Telegram.yaml
+  OpenAi:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
+    path: ./ruleset/OpenAi.yaml
+  Bing:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+    path: ./ruleset/Bing.yaml
+  Twitter:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.yaml
+    path: ./ruleset/Twitter.yaml
+  BiliBili:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.yaml
+    path: ./ruleset/BiliBili.yaml
+  Game:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Game/Game.yaml
+    path: ./ruleset/Game.yaml
+  ChinaIP:
+    type: http
+    behavior: ipcidr
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/clash-rule-provider.yml
+    path: ./ruleset/ChinaIP.yaml
+  ProxyLite:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ProxyLite/ProxyLite.yaml
+    path: ./ruleset/ProxyLite.yaml
+
+rules:
+
+  - RULE-SET,Direct,DIRECT
+  - DOMAIN-SUFFIX,lsxlsx.asuscomm.com,DIRECT
+  - DOMAIN-SUFFIX,router.asus.com,DIRECT
+  - RULE-SET,OpenAi,🤖OpenAI
+  - DOMAIN-SUFFIX,bard.google.com,🤖OpenAI
+  - DOMAIN-SUFFIX,Bing,🤖OpenAI
+  - DOMAIN-SUFFIX,quip.com,🤖OpenAI
+  - DOMAIN-SUFFIX,embymv.me,🎬桃子
+  - RULE-SET,Emby_Direct,DIRECT
+  - RULE-SET,Emby_Proxy,🎬EMBY
+  - RULE-SET,Speedtest,🚀SpeedTest
+  - RULE-SET,Lan,DIRECT
+  - RULE-SET,Download,DIRECT
+  - RULE-SET,Ad,REJECT
+  - RULE-SET,GlobalMedia,🎬国外媒体
+  - RULE-SET,Apple,🍎苹果服务
+  - RULE-SET,Github,守候网络
+  - RULE-SET,YOUTUBE,🎬Youtube
+  - RULE-SET,NETFLIX,🎬Netflix
+  - RULE-SET,Google,守候网络
+  - RULE-SET,Telegram,✈️Telegram
+  - RULE-SET,Twitter,守候网络
+  - RULE-SET,BiliBili,🎬哔哩哔哩
+  - RULE-SET,Game,🎮游戏平台
+  - RULE-SET,ProxyLite,守候网络
+  - RULE-SET,ChinaIP,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,⚓️其他流量
