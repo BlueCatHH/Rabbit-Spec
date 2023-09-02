@@ -527,13 +527,13 @@ proxy-groups:
       - '🇺🇸 US02 | 美国 1x- SS'
       - '🇺🇸 US03 | 美国 1x'
       - '🇺🇸 US03 | 美国 1x- SS'
-      - 🚀直接连接
-   -
+      - DIRECT
+  -
     name: ⚓️其他流量
     type: select
     proxies:
       - 🔰国外流量
-      - 🚀直接连接
+      - DIRECT
   -
     name: ✈️Telegram
     type: select
@@ -673,7 +673,7 @@ proxy-groups:
     name: 🎬哔哩哔哩
     type: select
     proxies:
-      - 🚀直接连接
+      - DIRECT
       - '🇦🇷 AR01 | 阿根廷 1x'
       - '🇦🇷 AR01 | 阿根廷 1x- SS'
       - '🇦🇺 AU01 | 澳大利亚 1x'
@@ -763,13 +763,8 @@ proxy-groups:
     name: 🍎苹果服务
     type: select
     proxies:
-      - 🚀直接连接
-      - 🔰国外流量
-  -
-    name: 🚀直接连接
-    type: select
-    proxies:
       - DIRECT
+      - 🔰国外流量
   -
     name: 🤖OpenAI
     type: select
