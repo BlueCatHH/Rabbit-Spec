@@ -22,7 +22,6 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-
 proxies:
   -
     name: '🇦🇷 AR01 | 阿根廷 1x'
@@ -128,6 +127,18 @@ proxies:
     obfs: http_simple
     obfs-param: 3c4293634.microsoft.com
   -
+    name: '🇭🇰 HK02 | 香港家宽 1x- SS'
+    type: ss
+    server: gz.alibabaint.xyz
+    port: '62020'
+    cipher: aes-128-gcm
+    password: V2efLnR3SJZr
+    udp: true
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 3c4293634.microsoft.com
+  -
     name: '🇯🇵 JP01 | 日本 1x'
     type: ssr
     server: sh.alibabaint.xyz
@@ -197,6 +208,29 @@ proxies:
       mode: http
       host: 3c4293634.microsoft.com
   -
+    name: '🇰🇷 KR02 | 韩国 1x'
+    type: ssr
+    server: sh.alibabaint.xyz
+    port: '60823'
+    cipher: aes-256-cfb
+    password: V2efLnR3SJZr
+    protocol: auth_aes128_md5
+    protocol-param: '3634:gH2vBBN7B9WTOh72'
+    obfs: http_simple
+    obfs-param: 3c4293634.microsoft.com
+  -
+    name: '🇰🇷 KR02 | 韩国 1x- SS'
+    type: ss
+    server: sh.alibabaint.xyz
+    port: '62023'
+    cipher: aes-128-gcm
+    password: V2efLnR3SJZr
+    udp: true
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 3c4293634.microsoft.com
+  -
     name: '🇱🇺 LU01 | 卢森堡 1x | 无视版权可跑下载'
     type: ssr
     server: sh.alibabaint.xyz
@@ -212,6 +246,29 @@ proxies:
     type: ss
     server: sh.alibabaint.xyz
     port: '62014'
+    cipher: aes-128-gcm
+    password: V2efLnR3SJZr
+    udp: true
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 3c4293634.microsoft.com
+  -
+    name: '🇱🇺 LU02 | 卢森堡 1x | 无视版权可跑下载'
+    type: ssr
+    server: sh.alibabaint.xyz
+    port: '60822'
+    cipher: aes-256-cfb
+    password: V2efLnR3SJZr
+    protocol: auth_aes128_md5
+    protocol-param: '3634:gH2vBBN7B9WTOh72'
+    obfs: http_simple
+    obfs-param: 3c4293634.microsoft.com
+  -
+    name: '🇱🇺 LU02 | 卢森堡 1x | 无视版权可跑下载- SS'
+    type: ss
+    server: sh.alibabaint.xyz
+    port: '62022'
     cipher: aes-128-gcm
     password: V2efLnR3SJZr
     udp: true
@@ -402,7 +459,29 @@ proxies:
     plugin-opts:
       mode: http
       host: 3c4293634.microsoft.com
-
+  -
+    name: '🇺🇸 US03 | 美国 1x'
+    type: ssr
+    server: sh.alibabaint.xyz
+    port: '60821'
+    cipher: aes-256-cfb
+    password: V2efLnR3SJZr
+    protocol: auth_aes128_md5
+    protocol-param: '3634:gH2vBBN7B9WTOh72'
+    obfs: http_simple
+    obfs-param: 3c4293634.microsoft.com
+  -
+    name: '🇺🇸 US03 | 美国 1x- SS'
+    type: ss
+    server: sh.alibabaint.xyz
+    port: '62021'
+    cipher: aes-128-gcm
+    password: V2efLnR3SJZr
+    udp: true
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 3c4293634.microsoft.com
 proxy-groups:
   -
     name: 🔰国外流量
@@ -417,14 +496,19 @@ proxy-groups:
       - '🇭🇰 HK02 | 香港 1x'
       - '🇭🇰 HK02 | 香港 1x- SS'
       - '🇭🇰 HK02 | 香港家宽 1x'
+      - '🇭🇰 HK02 | 香港家宽 1x- SS'
       - '🇯🇵 JP01 | 日本 1x'
       - '🇯🇵 JP01 | 日本 1x- SS'
       - '🇯🇵 JP02 | 日本 1x'
       - '🇯🇵 JP02 | 日本 1x- SS'
       - '🇰🇷 KR01 | 韩国 1x'
       - '🇰🇷 KR01 | 韩国 1x- SS'
+      - '🇰🇷 KR02 | 韩国 1x'
+      - '🇰🇷 KR02 | 韩国 1x- SS'
       - '🇱🇺 LU01 | 卢森堡 1x | 无视版权可跑下载'
       - '🇱🇺 LU01 | 卢森堡 1x | 无视版权可跑下载- SS'
+      - '🇱🇺 LU02 | 卢森堡 1x | 无视版权可跑下载'
+      - '🇱🇺 LU02 | 卢森堡 1x | 无视版权可跑下载- SS'
       - '🇵🇭 PH01 | 菲律宾 1x'
       - '🇵🇭 PH01 | 菲律宾 1x- SS'
       - '🇸🇬 SG01 | 新加坡 1x'
@@ -441,127 +525,9 @@ proxy-groups:
       - '🇺🇸 US01 | 美国 1x- SS'
       - '🇺🇸 US02 | 美国 1x'
       - '🇺🇸 US02 | 美国 1x- SS'
+      - '🇺🇸 US03 | 美国 1x'
+      - '🇺🇸 US03 | 美国 1x- SS'
       - 🚀直接连接
-  -
-    name: ⚓️其他流量
-    type: select
-    proxies:
-      - 🔰国外流量
-      - 🚀直接连接
-  -
-    name: ✈️Telegram
-    type: select
-    proxies:
-      - 🔰国外流量
-      - '🇦🇷 AR01 | 阿根廷 1x'
-      - '🇦🇷 AR01 | 阿根廷 1x- SS'
-      - '🇦🇺 AU01 | 澳大利亚 1x'
-      - '🇦🇺 AU01 | 澳大利亚 1x- SS'
-      - '🇭🇰 HK01 | 香港 1x'
-      - '🇭🇰 HK01 | 香港 1x- SS'
-      - '🇭🇰 HK02 | 香港 1x'
-      - '🇭🇰 HK02 | 香港 1x- SS'
-      - '🇭🇰 HK02 | 香港家宽 1x'
-      - '🇯🇵 JP01 | 日本 1x'
-      - '🇯🇵 JP01 | 日本 1x- SS'
-      - '🇯🇵 JP02 | 日本 1x'
-      - '🇯🇵 JP02 | 日本 1x- SS'
-      - '🇰🇷 KR01 | 韩国 1x'
-      - '🇰🇷 KR01 | 韩国 1x- SS'
-      - '🇱🇺 LU01 | 卢森堡 1x | 无视版权可跑下载'
-      - '🇱🇺 LU01 | 卢森堡 1x | 无视版权可跑下载- SS'
-      - '🇵🇭 PH01 | 菲律宾 1x'
-      - '🇵🇭 PH01 | 菲律宾 1x- SS'
-      - '🇸🇬 SG01 | 新加坡 1x'
-      - '🇸🇬 SG01 | 新加坡 1x- SS'
-      - '🇸🇬 SG02 | 新加坡 1x'
-      - '🇸🇬 SG02 | 新加坡 1x- SS'
-      - '🇹🇷 TR01 | 土耳其 1x'
-      - '🇹🇼 TW01 | 台湾 1x'
-      - '🇹🇼 TW01 | 台湾 1x- SS'
-      - '🇹🇼 TW02 | 台湾 1x'
-      - '🇹🇼 TW02 | 台湾 1x- SS'
-      - '🇬🇧 UK01 | 英国 1x'
-      - '🇺🇸 US01 | 美国 1x'
-      - '🇺🇸 US01 | 美国 1x- SS'
-      - '🇺🇸 US02 | 美国 1x'
-      - '🇺🇸 US02 | 美国 1x- SS'
-  -
-    name: 🎬Youtube
-    type: select
-    proxies:
-      - 🔰国外流量
-      - '🇦🇷 AR01 | 阿根廷 1x'
-      - '🇦🇷 AR01 | 阿根廷 1x- SS'
-      - '🇦🇺 AU01 | 澳大利亚 1x'
-      - '🇦🇺 AU01 | 澳大利亚 1x- SS'
-      - '🇭🇰 HK01 | 香港 1x'
-      - '🇭🇰 HK01 | 香港 1x- SS'
-      - '🇭🇰 HK02 | 香港 1x'
-      - '🇭🇰 HK02 | 香港 1x- SS'
-      - '🇭🇰 HK02 | 香港家宽 1x'
-      - '🇯🇵 JP01 | 日本 1x'
-      - '🇯🇵 JP01 | 日本 1x- SS'
-      - '🇯🇵 JP02 | 日本 1x'
-      - '🇯🇵 JP02 | 日本 1x- SS'
-      - '🇰🇷 KR01 | 韩国 1x'
-      - '🇰🇷 KR01 | 韩国 1x- SS'
-      - '🇱🇺 LU01 | 卢森堡 1x | 无视版权可跑下载'
-      - '🇱🇺 LU01 | 卢森堡 1x | 无视版权可跑下载- SS'
-      - '🇵🇭 PH01 | 菲律宾 1x'
-      - '🇵🇭 PH01 | 菲律宾 1x- SS'
-      - '🇸🇬 SG01 | 新加坡 1x'
-      - '🇸🇬 SG01 | 新加坡 1x- SS'
-      - '🇸🇬 SG02 | 新加坡 1x'
-      - '🇸🇬 SG02 | 新加坡 1x- SS'
-      - '🇹🇷 TR01 | 土耳其 1x'
-      - '🇹🇼 TW01 | 台湾 1x'
-      - '🇹🇼 TW01 | 台湾 1x- SS'
-      - '🇹🇼 TW02 | 台湾 1x'
-      - '🇹🇼 TW02 | 台湾 1x- SS'
-      - '🇬🇧 UK01 | 英国 1x'
-      - '🇺🇸 US01 | 美国 1x'
-      - '🇺🇸 US01 | 美国 1x- SS'
-      - '🇺🇸 US02 | 美国 1x'
-      - '🇺🇸 US02 | 美国 1x- SS'
-  -
-    name: 🎬Netflix
-    type: select
-    proxies:
-      - 🔰国外流量
-      - '🇦🇷 AR01 | 阿根廷 1x'
-      - '🇦🇷 AR01 | 阿根廷 1x- SS'
-      - '🇦🇺 AU01 | 澳大利亚 1x'
-      - '🇦🇺 AU01 | 澳大利亚 1x- SS'
-      - '🇭🇰 HK01 | 香港 1x'
-      - '🇭🇰 HK01 | 香港 1x- SS'
-      - '🇭🇰 HK02 | 香港 1x'
-      - '🇭🇰 HK02 | 香港 1x- SS'
-      - '🇭🇰 HK02 | 香港家宽 1x'
-      - '🇯🇵 JP01 | 日本 1x'
-      - '🇯🇵 JP01 | 日本 1x- SS'
-      - '🇯🇵 JP02 | 日本 1x'
-      - '🇯🇵 JP02 | 日本 1x- SS'
-      - '🇰🇷 KR01 | 韩国 1x'
-      - '🇰🇷 KR01 | 韩国 1x- SS'
-      - '🇱🇺 LU01 | 卢森堡 1x | 无视版权可跑下载'
-      - '🇱🇺 LU01 | 卢森堡 1x | 无视版权可跑下载- SS'
-      - '🇵🇭 PH01 | 菲律宾 1x'
-      - '🇵🇭 PH01 | 菲律宾 1x- SS'
-      - '🇸🇬 SG01 | 新加坡 1x'
-      - '🇸🇬 SG01 | 新加坡 1x- SS'
-      - '🇸🇬 SG02 | 新加坡 1x'
-      - '🇸🇬 SG02 | 新加坡 1x- SS'
-      - '🇹🇷 TR01 | 土耳其 1x'
-      - '🇹🇼 TW01 | 台湾 1x'
-      - '🇹🇼 TW01 | 台湾 1x- SS'
-      - '🇹🇼 TW02 | 台湾 1x'
-      - '🇹🇼 TW02 | 台湾 1x- SS'
-      - '🇬🇧 UK01 | 英国 1x'
-      - '🇺🇸 US01 | 美国 1x'
-      - '🇺🇸 US01 | 美国 1x- SS'
-      - '🇺🇸 US02 | 美国 1x'
-      - '🇺🇸 US02 | 美国 1x- SS'
   -
     name: 🎬哔哩哔哩
     type: select
