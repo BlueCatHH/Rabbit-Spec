@@ -13,6 +13,8 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
+    - 223.5.5.5
+    - 8.8.8.8
     - 119.29.29.29
     - 1.1.1.1
   fallback:
@@ -1121,7 +1123,6 @@ rules:
   - RULE-SET,Speedtest,🚀SpeedTest
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Download,DIRECT
-  - RULE-SET,Ad,REJECT
   - RULE-SET,GlobalMedia,🎬国外媒体
   - RULE-SET,Apple,🍎苹果服务
   - RULE-SET,Github,守候网络
