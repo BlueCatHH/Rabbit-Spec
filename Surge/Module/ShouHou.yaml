@@ -173,7 +173,6 @@ rules:
   - RULE-SET,Speedtest,🚀SpeedTest
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Download,DIRECT
-  - RULE-SET,Ad,REJECT
   - RULE-SET,GlobalMedia,🎬国外媒体
   - RULE-SET,Apple,🍎苹果服务
   - RULE-SET,Github,守候网络
