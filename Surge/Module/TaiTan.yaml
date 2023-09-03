@@ -1109,7 +1109,6 @@ rule-providers:
 
 rules:
 
-  - RULE-SET,Direct,DIRECT
   - DOMAIN-SUFFIX,lsxlsx.asuscomm.com,DIRECT
   - DOMAIN-SUFFIX,router.asus.com,DIRECT
   - RULE-SET,OpenAi,🤖OpenAI
