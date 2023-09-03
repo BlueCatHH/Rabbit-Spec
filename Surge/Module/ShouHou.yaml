@@ -68,42 +68,12 @@ rule-providers:
     interval: 86400
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml
     path: ./ruleset/Speedtest.yaml
-  Lan:
-    type: http
-    behavior: classical
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.yaml
-    path: ./ruleset/Lan.yaml
-  Download:
-    type: http
-    behavior: classical
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download.yaml
-    path: ./ruleset/Download.yaml
-  Ad:
-    type: http
-    behavior: domain
-    interval: 86400
-    url: https://anti-ad.net/clash.yaml
-    path: ./ruleset/anti-ad-clash.yaml
-  GlobalMedia:
-    type: http
-    behavior: classical
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
-    path: ./ruleset/GlobalMedia.yaml
   Apple:
     type: http
     behavior: classical
     interval: 86400
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical.yaml
     path: ./ruleset/Apple.yaml
-  Github:
-    type: http
-    behavior: classical
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml
-    path: ./ruleset/Github.yaml
   YOUTUBE:
     type: http
     behavior: classical
@@ -116,12 +86,12 @@ rule-providers:
     interval: 86400
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
     path: ./ruleset/Netflix.yaml
-  Google:
+  Github:
     type: http
     behavior: classical
     interval: 86400
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml
-    path: ./ruleset/Google.yaml
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml
+    path: ./ruleset/Github.yaml
   Telegram:
     type: http
     behavior: classical
@@ -158,6 +128,30 @@ rule-providers:
     interval: 86400
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Game/Game.yaml
     path: ./ruleset/Game.yaml
+  GlobalMedia:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+    path: ./ruleset/GlobalMedia.yaml
+  Google:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml
+    path: ./ruleset/Google.yaml  
+  Download:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download.yaml
+    path: ./ruleset/Download.yaml 
+  Lan:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.yaml
+    path: ./ruleset/Lan.yaml
   ChinaIP:
     type: http
     behavior: ipcidr
