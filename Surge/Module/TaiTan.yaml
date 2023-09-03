@@ -1125,15 +1125,15 @@ rules:
   - RULE-SET,Ad,REJECT
   - RULE-SET,GlobalMedia,🎬国外媒体
   - RULE-SET,Apple,🍎苹果服务
-  - RULE-SET,Github,🔰国外流量
+  - RULE-SET,Github,守候网络
   - RULE-SET,YOUTUBE,🎬Youtube
   - RULE-SET,NETFLIX,🎬Netflix
-  - RULE-SET,Google,🔰国外流量
+  - RULE-SET,Google,守候网络
   - RULE-SET,Telegram,✈️Telegram
-  - RULE-SET,Twitter,🔰国外流量
+  - RULE-SET,Twitter,守候网络
   - RULE-SET,BiliBili,🎬哔哩哔哩
   - RULE-SET,Game,🎮游戏平台
-  - RULE-SET,ProxyLite,🔰国外流量
+  - RULE-SET,ProxyLite,守候网络
   - RULE-SET,ChinaIP,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,⚓️其他流量
