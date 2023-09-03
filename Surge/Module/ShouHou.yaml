@@ -44,12 +44,12 @@ proxy-groups:
     - { name: 🎮游戏平台, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK CM 0.01x', '🇭🇰 HK CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK EIP 1x', '🇭🇰 HK IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP BGP 02 0.01x', '🇯🇵 JP UDPN 1x', '🇺🇸 US CM 0.01x', '🇺🇸 US IPLC 1x', '🇨🇳 TW CM 0.01x'] }
     - { name: ⚓️其他流量, type: select, proxies: [DIRECT, 守候网络, 自动选择, 故障转移, '🇭🇰 HK CM 0.01x', '🇭🇰 HK CM 0.01x [备用]', '🇭🇰 HK WEIYI 1x', '🇭🇰 HK EIP 1x', '🇭🇰 HK IPLC-EIP 1x', '🇸🇬 SG CN2GIA 0.01x', '🇯🇵 JP BGP 0.01x', '🇯🇵 JP BGP 02 0.01x', '🇯🇵 JP UDPN 1x', '🇺🇸 US CM 0.01x', '🇺🇸 US IPLC 1x', '🇨🇳 TW CM 0.01x'] }
 rule-providers:
-  Direct:
+  BiliBili:
     type: http
-    behavior: domain
+    behavior: classical
     interval: 86400
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Direct/Direct.yaml
-    path: ./ruleset/Direct.yaml
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.yaml
+    path: ./ruleset/BiliBili.yaml
   Emby_Direct:
     type: http
     behavior: classical
@@ -62,18 +62,18 @@ rule-providers:
     interval: 86400
     url: https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/rule/Emby_Proxy.yaml
     path: ./ruleset/Emby_Proxy.yaml
-  Speedtest:
-    type: http
-    behavior: classical
-    interval: 86400
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml
-    path: ./ruleset/Speedtest.yaml
   Apple:
     type: http
     behavior: classical
     interval: 86400
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical.yaml
     path: ./ruleset/Apple.yaml
+  Speedtest:
+    type: http
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml
+    path: ./ruleset/Speedtest.yaml
   YOUTUBE:
     type: http
     behavior: classical
@@ -116,12 +116,6 @@ rule-providers:
     interval: 86400
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.yaml
     path: ./ruleset/Twitter.yaml
-  BiliBili:
-    type: http
-    behavior: classical
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.yaml
-    path: ./ruleset/BiliBili.yaml
   Game:
     type: http
     behavior: classical
