@@ -4,6 +4,11 @@ DOMAIN-SUFFIX,embymv.tk
 # > 不给看
 DOMAIN-SUFFIX,c.emby.pro
 
+# > GuGu
+DOMAIN-SUFFIX,pro.gugumedia.link
+DOMAIN-SUFFIX,main.gugumedia.link
+DOMAIN-SUFFIX,front.gugumedia.link
+
 # > CC
 DOMAIN-SUFFIX,cc.ccemby.tk
 
