@@ -3,12 +3,10 @@
 DOMAIN-SUFFIX,zwei.bgka.me
 DOMAIN-SUFFIX,c.emby.pro
 
-
 # > 桃子
 
 DOMAIN-SUFFIX,embymv.me
 DOMAIN-SUFFIX,cn.embymv.me
-
 
 # > Ody
 
@@ -23,8 +21,9 @@ DOMAIN-SUFFIX,jp.odysseyplus.site
 # 日本2
 DOMAIN-SUFFIX,jp2.odysseyplus.site
 
-
 # > GuGu
 
-DOMAIN-SUFFIX,front.gugumedia.link
 DOMAIN-SUFFIX,pro.gugumedia.link
+DOMAIN-SUFFIX,front.gugumedia.link
+DOMAIN-SUFFIX,main.gugumedia.link
+
