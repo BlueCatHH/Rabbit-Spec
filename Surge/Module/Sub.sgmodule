@@ -16,12 +16,15 @@ Sub_info = script-name=Sub_info1,update-interval=3600
 Sub_info = script-name=Sub_info2,update-interval=3600
 Sub_info = script-name=Sub_info3,update-interval=3600
 Sub_info = script-name=Sub_info4,update-interval=3600
+Sub_info = script-name=Sub_info5,update-interval=3600
+
 
 
 [Script]
 #Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=encode后的机场节点链接&reset_day=1&title=你机场名字&icon=externaldrive.fill.badge.icloud=#007aff
-Sub_info1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fsubscribe.xttlove.uk%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D98f95bc0e0ee91bbd0771f1812c9f147&reset_day=5&title=守候&icon=externaldrive.fill.badge.icloud=#007aff
-Sub_info2 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fsubscribe.infinitetitan.com%2Flink%2F3L61nNuZCqAgUzzC%3Fsurge%3D4&reset_day=8&title=泰坦&icon=externaldrive.fill.badge.icloud=#007aff
-Sub_info3 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fbb.aliyun.best%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D310b7dfc6b5f2aa0752859d4a1b32292&reset_day=11&title=巴士&icon=externaldrive.fill.badge.icloud=#007aff
-Sub_info4 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fzimoceng.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D744859c41e5e7893a4f3f712e7fe8373&reset_day=17&title=瑟瑟&icon=externaldrive.fill.badge.icloud=#007aff
+Sub_info1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fsubscribe.xttlove.uk%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D98f95bc0e0ee91bbd0771f1812c9f147&reset_day=5&title=守候网络&icon=externaldrive.fill.badge.icloud=#007aff
+Sub_info2 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fsubscribe.infinitetitan.com%2Flink%2F3L61nNuZCqAgUzzC%3Fsurge%3D4&reset_day=8&title=无限泰坦&icon=externaldrive.fill.badge.icloud=#007aff
+Sub_info3 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fbb.aliyun.best%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D310b7dfc6b5f2aa0752859d4a1b32292&reset_day=11&title=宝宝巴士&icon=externaldrive.fill.badge.icloud=#007aff
+Sub_info4 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fzimoceng.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D744859c41e5e7893a4f3f712e7fe8373&reset_day=17&title=瑟瑟小站&icon=externaldrive.fill.badge.icloud=#007aff
+Sub_info5 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/LANMAOHH/Rabbit-Spec/main/Surge/Module/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fxianyu.jinglongyu.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D747dc9049f7939b712705e97442a6d20&reset_day=16&title=金龙鱼～&icon=externaldrive.fill.badge.icloud=#007aff
 
