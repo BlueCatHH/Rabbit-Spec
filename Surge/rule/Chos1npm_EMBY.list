@@ -30,3 +30,6 @@ DOMAIN-SUFFIX,main.gugumedia.link
 # > misakaf
 DOMAIN-SUFFIX,emby.misakaf.org 
 DOMAIN-SUFFIX,cdn.misakaf.org 
+
+# > 
+DOMAIN-SUFFIX,emby.st8.one
