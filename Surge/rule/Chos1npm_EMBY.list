@@ -2,6 +2,7 @@
 
 DOMAIN-SUFFIX,zwei.bgka.me
 DOMAIN-SUFFIX,c.emby.pro
+DOMAIN-SUFFIX,s2.bgka.me
 
 # > 桃子
 
@@ -26,10 +27,3 @@ DOMAIN-SUFFIX,jp2.odysseyplus.site
 DOMAIN-SUFFIX,pro.gugumedia.link
 DOMAIN-SUFFIX,front.gugumedia.link
 DOMAIN-SUFFIX,main.gugumedia.link
-
-# > misakaf
-DOMAIN-SUFFIX,emby.misakaf.org 
-DOMAIN-SUFFIX,cdn.misakaf.org 
-
-# > 
-DOMAIN-SUFFIX,emby.st8.one
