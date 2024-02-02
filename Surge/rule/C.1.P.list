@@ -8,24 +8,8 @@ DOMAIN-SUFFIX,s2.bgka.me
 
 DOMAIN-SUFFIX,embymv.me
 
-# > Ody
-
-# Cloudflare
-DOMAIN-SUFFIX,cf.odysseyplus.site
-# 美西
-DOMAIN-SUFFIX,us.odysseyplus.site
-DOMAIN-SUFFIX,us2.odysseyplus.site
-# 韩国
-DOMAIN-SUFFIX,kr.odysseyplus.site
-# 日本
-DOMAIN-SUFFIX,jp.odysseyplus.site
-# 日本2
-DOMAIN-SUFFIX,jp2.odysseyplus.site
-
-
 # > GuGu
 
-DOMAIN-SUFFIX,pro.gugumedia.link
 DOMAIN-SUFFIX,front.gugumedia.link
 DOMAIN-SUFFIX,main.gugumedia.link
 
