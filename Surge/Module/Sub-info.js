@@ -1,9 +1,3 @@
-/*
- * 由@lanmaohh 编写
- * 更新日期：2023.06.16
- * 版本：1.0
-*/
-
 (async () => {
   let args = getArgs();
   let info = await getDataInfo(args.url);
